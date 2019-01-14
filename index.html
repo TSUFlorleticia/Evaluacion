@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+ <script src="script.js"></script>
+<head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="encabezado">
+     <h1>Green Leaves</h1>   
+    </div>
+	<form>
+    <div ng-controller="PruebaController" name="registro"  class="Panel" class="lbl" class="boton" sng-submit="registrar()" novalidate>
+            
+    <br>Nombre:<input type="text" placeholder="Nombre" name="nombre" class="campos" ng-model="usuario.nombre" required>
+    <br/>
+    <br>E-mail: <input type="email" placeholder="Email" name="email" class="campos" ng-model="usuario.email" required /><br /></a>
+    <br>Teléfono:<input type="text" ssng-model="model.telefono" name="mobileNo" class="campos" ng-pattern="regEx"/><br /></a>
+    <br>Fecha:  <input type="date" class="campos" name="fecha" step="1" min="2019-01-01" max="2019-12-31" value="<?php echo date("Y-m-d");?><br /></a>
+    <br>Ciudad y Estado:<input type="text" name="ciudad" class="campos"/><br /></a>
+    <br><input type="submit" value="Enviar" />
+</div>
+    </form>
+    <script src="js/angular.js"></script>
+    <script src="js/controller.js"></script>  
+</body>
+</html>
